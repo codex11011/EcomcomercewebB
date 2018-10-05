@@ -1,7 +1,5 @@
 module.exports = {
-
-	database:'mongodb://localhost/databasename',
-	port: 3000,
-	secretKey: "@@##"
-
-}
+  database: "mongodb://localhost:27017/mydb",
+  port: 3000,
+  secretKey: "@@##"
+};

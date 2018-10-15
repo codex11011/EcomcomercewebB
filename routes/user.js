@@ -18,7 +18,7 @@ router.post(
     failureFlash: true
   })
 );
-
+// profile route
 router.get("/profile", passportConf.isAuthenticated, (req, res, next) => {
   User.findOne({ _id: req.user._id })
     .populate("history.item")
